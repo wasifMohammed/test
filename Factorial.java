@@ -25,8 +25,12 @@ public class Factorial {
            for(i=1;i<n;++i){
            result=result*(n-i);
            }
-           }
-       System.out.println(result);// TODO code application logic here
+           System.out.println(result);
+           }else{
+           System.out.println("Invalid input..");
+       
+       }
+       // TODO code application logic here
     }
     
 }
