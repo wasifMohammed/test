@@ -9,10 +9,8 @@ int main()
     
     getline(cin,str);
     
-    //cout<<"The initial string is .."<<endl;
     //cout<<str<<endl;
     str.push_back('.');
-    //cout<<"The string after pushback is .."<<endl;
     cout<<str<<endl;
     return 0;
     
