@@ -27,6 +27,7 @@ public class Reversingeachstring {
         Scanner read=new Scanner(System.in);
         System.out.println("Enter the string..");
         str0=read.nextLine();
+        if(str0.length()<=100000){
         for(i=str0.length()-1;i>=0;--i){
             str1=str1+str0.charAt(i);
         }
@@ -37,6 +38,8 @@ public class Reversingeachstring {
              
         }
         System.out.println(temp);
+        }
+        
       
     }
 }
