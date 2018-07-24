@@ -25,7 +25,8 @@ public class JavaApplication20 {
        char[] chars=new char[20];
        char[] temp=new char[20];
        chars=str0.toCharArray();
-       for(i=0;i<str0.length()-1;++i){
+        if(str0.length()<=100000){
+            for(i=0;i<str0.length()-1;++i){
            if(chars[i]==chars[i+1]){
            System.out.println("NO..");
            flag=1;
@@ -38,7 +39,10 @@ public class JavaApplication20 {
            
            }
        
-       }
+         }
+        
+        }
+       
        
        if(flag!=1){
            System.out.println("YES..");
