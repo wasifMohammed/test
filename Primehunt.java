@@ -20,7 +20,9 @@ public class Primehunt {
         System.out.println("Enter the number..");
         n=read.nextInt();
         boolean prime[]=new boolean[n+1];
-        for(i=2;i<=n;++i){
+        if(n<=100000){
+          
+            for(i=2;i<=n;++i){
             prime[i]=true;
         }
         for(p=2;p*p<=n;p++){
@@ -34,6 +36,8 @@ public class Primehunt {
             if(prime[i]==true){
                 System.out.print(i+" ");
             }
+        
+        }
         }
         
 
