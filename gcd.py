@@ -13,7 +13,7 @@ def main():
 	arr=[]
 	a=[]
 	b=[]
-	i=1
+	i=0
 	j=1
 	for i in range(s):
 		arr.append(input("Element "))
