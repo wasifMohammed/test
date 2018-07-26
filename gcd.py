@@ -13,25 +13,26 @@ def main():
 	arr=[]
 	a=[]
 	b=[]
-	i=0
-	j=1
+	i=1
+	j=0
 	for i in range(s):
 		arr.append(input("Element "))
-	for i in range(q*2):
+	for i in range((q*2)):
 		a.append(input("Query "))
 	
 	
-	for j in range(len(a)/2):
-		p=a[j]
-		q=a[j+1]
-		y=arr[p]
-		z=arr[q]
-		if(y not in arr or z not in arr):
-			fl=1
-		else:
+	for i in range(len(a)/2):
+		for j in range(i):
+			p=a[j]
+			q=a[j+1]
+			y=arr[p-1]
+			z=arr[q-1]
+			if(y not in arr or z not in arr):
+				fl=1
+			else:
 
-			b.append(gcd(y,z))
-			fl=0
+				b.append(gcd(y,z))
+				fl=0
 			
 	if(fl==1):
 		print "One of the elements isn't in the array.."
