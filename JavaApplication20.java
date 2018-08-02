@@ -16,44 +16,34 @@ public class JavaApplication20 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-       int i,flag=0;
-       String str0=  new String();
-       Scanner read=new Scanner(System.in);
+    public static void main(String[] args) 
+    {
+       int i,flag = 0;
+       String str0  =  new String();
+       Scanner read = new Scanner(System.in);
        System.out.println("Enter the String ..");
        str0=read.nextLine();
-       char[] chars=new char[20];
-       char[] temp=new char[20];
-       chars=str0.toCharArray();
-        if(str0.length()<=100000){
-            for(i=0;i<str0.length()-1;++i){
-           if(chars[i]==chars[i+1]){
-           System.out.println("NO..");
-           flag=1;
-           }
-           else if(chars[i]!=chars[i+1])
-           {
-           temp[i]=chars[i];
-           chars[i]=chars[i+1];
-           chars[i+1]=temp[i];
-           
-           }
-       
-         }
+       char[] chars = new char[20];
+       char[] temp  = new char[20];
         
-        }
-       
-       
-       if(flag!=1){
-           System.out.println("YES..");
-           for(i=0;i<str0.length();++i){
-           //System.out.println(chars[i]);
+       chars=str0.toCharArray();
+        
+       if(str0.length() <= 100000){
+           for(i=0;i<str0.length()-1;++i){
+                
+               if(chars[i] == chars[i+1]){
+                   System.out.println("NO..");
+                   flag = 1;
+               }else if(chars[i]!=chars[i+1]){
+                   temp[i]    =  chars[i];
+                   chars[i]   =  chars[i+1];
+                   chars[i+1] =  temp[i];
+                }
            }
-       
        }
-       
-               
-
+       if(flag != 1){
+           System.out.println("YES..");       
+       }
     }
     
 }
