@@ -17,34 +17,34 @@ public class Capitalizefirst {
      */
     public static void main(String[] args) 
     {
-        int i=0,j,flag=0;
-        String str0=new String();
-        Scanner read=new Scanner(System.in);
+        int i = 0,j,flag = 0;
+        String str0  = new String();
+        Scanner read = new Scanner(System.in);
         System.out.println("Enter the String..");
-        str0=read.nextLine();
-        String newstr=new String();
-        newstr="";
-        char[] chars=new char[20];
+        str0 = read.nextLine();
+        String newstr = new String();
+        newstr = "";
+        char[] chars = new char[20];
        
-        chars=str0.toCharArray();
+        chars  = str0.toCharArray();
         
-        if(str0.length()<=100000){
-            for(i=0;i<str0.length();++i){
-                if (i>=0&&i<str0.length()){
-                    if(chars[i]!=' '){
-                        if(i%2==0){
-                            newstr=newstr+Character.toUpperCase(chars[i]);
-                        }else if(i%2!=0){
-                            newstr=newstr+Character.toLowerCase(chars[i]);
+        if(str0.length() <= 100000){
+            for(i = 0; i < str0.length(); ++i){
+                if (i >= 0 && i < str0.length()){
+                    if(chars[i] != ' '){
+                        if(i%2 == 0){
+                            newstr = newstr + Character.toUpperCase(chars[i]);
+                        }else if(i%2 != 0){
+                            newstr = newstr + Character.toLowerCase(chars[i]);
                         }
-                    }else if(chars[i]==' '){
-                        //i++;
-                        //newstr=newstr+' ';
-                        //i++;
-                        if(i%2!=0){
-                            newstr=newstr+Character.toUpperCase(chars[i]);
-                        }else if(i%2==0){
-                            newstr=newstr+Character.toLowerCase(chars[i]);
+                    }else if(chars[i] == ' '){
+                        /*i++;
+                         *newstr=newstr+' ';
+                         *i++;*/
+                        if(i%2 != 0){
+                            newstr = newstr + Character.toUpperCase(chars[i]);
+                        }else if(i%2 == 0){
+                            newstr = newstr + Character.toLowerCase(chars[i]);
                         }
                         i--;
                         i++;
@@ -55,5 +55,3 @@ public class Capitalizefirst {
         System.out.println(newstr);
     }
 }
-    
-
