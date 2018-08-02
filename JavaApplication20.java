@@ -19,7 +19,7 @@ public class JavaApplication20 {
     public static void main(String[] args) 
     {
        int i,flag = 0;
-       String str0  =  new String();
+       String str0  = new String();
        Scanner read = new Scanner(System.in);
        System.out.println("Enter the String ..");
        str0=read.nextLine();
