@@ -48,8 +48,8 @@ public class Capitalizefirst {
                         }
                         i--;
                         i++;
-                    } 
-               }
+                    }
+                }
             }
         }
         System.out.println(newstr);
