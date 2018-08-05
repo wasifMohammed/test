@@ -45,5 +45,4 @@ public class JavaApplication20 {
            System.out.println("YES..");       
        }
     }
-    
 }
